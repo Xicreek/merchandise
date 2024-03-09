@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品2详情</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto py-10">
+        <!-- 返回按钮 -->
+        <div class="mb-5">
+            <button onclick="window.location.href='index.html'" class="mb-5 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                返回主页
+            </button>
+        </div>
+        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    商品2名称
+                </h3>
+                <button onclick="location.href='payment.html'" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    购买
+                </button>
+            </div>
+            <div class="border-t border-gray-200">
+                <dl>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            商品图片
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            <img src="https://via.placeholder.com/400x300" alt="商品2图片" class="w-full h-56 object-cover object-center">
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            商品描述
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            这是商品2的详细描述。它具有很多优秀的特点，非常值得购买。
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
