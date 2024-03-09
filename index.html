@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人商品展示</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-900">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700">
+                            <span class="font-bold">我的商品</span>
+                        </a>
+                    </div>
+                    <!-- 导航链接 -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#products" class="py-5 px-3 text-gray-700 hover:text-gray-900">商品展示</a>
+                        <a href="#about" class="py-5 px-3 text-gray-700 hover:text-gray-900">关于我们</a>
+                        <a href="#contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">联系方式</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 主要内容区域 -->
+    <div class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <!-- 商品展示 -->
+            <section id="products" class="py-12">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">精选商品</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 商品项 -->
+                    <!-- 示例商品1 -->
+                    <div class="product-item bg-white shadow-lg rounded-lg overflow-hidden" data-product-id="1">
+                        <img src="https://via.placeholder.com/400x300" alt="商品1图片" class="w-full h-56 object-cover object-center">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">商品1名称</h3>
+                            <p class="text-gray-600 mt-2">这是商品1的简短描述。</p>
+                        </div>
+                    </div>
+                    <!-- 示例商品2 -->
+                    <div class="product-item bg-white shadow-lg rounded-lg overflow-hidden" data-product-id="2">
+                        <img src="https://via.placeholder.com/400x300" alt="商品2图片" class="w-full h-56 object-cover object-center">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">商品2名称</h3>
+                            <p class="text-gray-600 mt-2">这是商品2的简短描述。</p>
+                        </div>
+                    </div>
+                    <!-- 示例商品3 -->
+                    <div class="product-item bg-white shadow-lg rounded-lg overflow-hidden" data-product-id="3">
+                        <img src="https://via.placeholder.com/400x300" alt="商品3图片" class="w-full h-56 object-cover object-center">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">商品3名称</h3>
+                            <p class="text-gray-600 mt-2">这是商品3的简短描述。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 关于我们 -->
+            <section id="about" class="bg-gray-100 py-12">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">关于我们</h2>
+                    <p class="text-gray-600 mt-4">我们是一家专注于高品质商品的公司，致力于为客户提供最好的产品和服务。从设计到生产，我们都坚持最高标准。</p>
+                </div>
+            </section>
+            <!-- 联系方式 -->
+            <section id="contact" class="py-12">
+                <div class="max-w-xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">联系方式</h2>
+                    <form id="contact-form" action="#" method="POST" class="bg-white shadow-lg rounded-lg p-8">
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 text-sm text-gray-600">姓名</label>
+                            <input type="text" name="name" id="name" class="block w-full p-3 rounded bg-gray-50 border border-gray-300">
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2 text-sm text-gray-600">电子邮件</label>
+                            <input type="email" name="email" id="email" class="block w-full p-3 rounded bg-gray-50 border border-gray-300">
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="block mb-2 text-sm text-gray-600">消息</label>
+                            <textarea name="message" id="message" rows="4" class="block w-full p-3 rounded bg-gray-50 border border-gray-300"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 rounded text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">发送</button>
+                    </form>
+                    <div id="form-feedback" class="mt-3"></div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
